@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/raushan_kumar_portfolio/static/css/main.6ff48f9b.chunk.css",
-    "main.js": "/raushan_kumar_portfolio/static/js/main.795d2889.chunk.js",
-    "main.js.map": "/raushan_kumar_portfolio/static/js/main.795d2889.chunk.js.map",
+    "main.js": "/raushan_kumar_portfolio/static/js/main.13ec451c.chunk.js",
+    "main.js.map": "/raushan_kumar_portfolio/static/js/main.13ec451c.chunk.js.map",
     "runtime-main.js": "/raushan_kumar_portfolio/static/js/runtime-main.ca185134.js",
     "runtime-main.js.map": "/raushan_kumar_portfolio/static/js/runtime-main.ca185134.js.map",
     "static/css/2.95d02a1e.chunk.css": "/raushan_kumar_portfolio/static/css/2.95d02a1e.chunk.css",
@@ -12,6 +12,7 @@
     "static/css/2.95d02a1e.chunk.css.map": "/raushan_kumar_portfolio/static/css/2.95d02a1e.chunk.css.map",
     "static/css/main.6ff48f9b.chunk.css.map": "/raushan_kumar_portfolio/static/css/main.6ff48f9b.chunk.css.map",
     "static/js/2.26edad72.chunk.js.LICENSE.txt": "/raushan_kumar_portfolio/static/js/2.26edad72.chunk.js.LICENSE.txt",
+    "static/media/RaushanKumarResume.dbc17e1d.pdf": "/raushan_kumar_portfolio/static/media/RaushanKumarResume.dbc17e1d.pdf",
     "static/media/task.25e6d345.png": "/raushan_kumar_portfolio/static/media/task.25e6d345.png"
   },
   "entrypoints": [
@@ -19,6 +20,6 @@
     "static/css/2.95d02a1e.chunk.css",
     "static/js/2.26edad72.chunk.js",
     "static/css/main.6ff48f9b.chunk.css",
-    "static/js/main.795d2889.chunk.js"
+    "static/js/main.13ec451c.chunk.js"
   ]
 }
