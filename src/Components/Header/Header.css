@@ -1,0 +1,35 @@
+
+.header {
+  height: 8em;
+  /* max-width: 1200px; */
+  width: 100%;
+  margin: 0 auto;
+  justify-content: space-between;
+  /* border:3px solid  red; */
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  /* margin-left: 5%;  */
+  padding:10px 40px;
+
+}
+
+@media (max-width: 600px) {
+  .header {
+    height: 6em;
+      position: fixed;
+        z-index: 1;
+        top: 0;
+    
+  }
+}
+ 
+
+
+
+
+
+
+
+
+
