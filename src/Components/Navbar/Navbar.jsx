@@ -5,7 +5,7 @@ import Brightness2Icon from "@material-ui/icons/Brightness2";
 import WbSunnyRoundedIcon from "@material-ui/icons/WbSunnyRounded";
 import MenuIcon from "@material-ui/icons/Menu";
 import CloseIcon from "@material-ui/icons/Close";
-// import resumeFile from "../../Assets/ResumePdf/RaushanResume.pdf";
+import resumeFile from "../../Assets/ResumePdf/RaushanKumarResume.pdf";
 export const Navbar = () => {
   const [{ themename, toggeltheme }] = React.useContext(ThemeContext);
   const [showNavList, setShowNavList] = React.useState(false);
@@ -19,7 +19,7 @@ export const Navbar = () => {
   };
   const handleResume = () => {
     let alink = document.createElement("a");
-    // alink.href = resumeFile;
+    alink.href = resumeFile;
     alink.download = "Raushan Kumar Resume.pdf";
     alink.click();
     viewResume();
