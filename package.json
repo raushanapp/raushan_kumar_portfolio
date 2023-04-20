@@ -1,5 +1,5 @@
 {
-  "homepage": "https://raushanapp.github.io/raushan_portfolio",
+  "homepage": "https://raushanapp.github.io/raushan_kumar_portfolio",
   "name": "updatedportfolio",
   "version": "1.0.0",
   "description": "",
@@ -25,7 +25,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "predeploy":"npm run build",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
@@ -37,7 +37,7 @@
     "not ie <= 11",
     "not op_mini all"
   ],
-  "repository": "https://github.com/raushanapp/raushan_portfolio.git",
+  "repository": "https://github.com/raushanapp/raushan_kumar_portfolio.git",
   "author": "raushan kuamr <sraushan890@gmail.com>",
   "license": "MIT"
 }
