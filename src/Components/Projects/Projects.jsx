@@ -107,7 +107,7 @@ export const Projects = () => {
                 <SiAmazonaws />
               </div>
               <div>
-                <a href="" target="_blank" rel="noreferrer">
+                <a href="http://13.233.50.68/" target="_blank" rel="noreferrer">
                   <span type="button" className="btn btn--outline onbt">
                     See this Live
                   </span>
@@ -181,16 +181,16 @@ export const Projects = () => {
           <div className="project">
             <div className="project_videocontainer">
               <div data-aos="fade-right">
-                <img
-                  src={task}
-                  alt=""
-                />
+                <img src={task} alt="" />
               </div>
             </div>
             <div className="project_information" data-aos="fade-right">
               <h2>Daily Task App</h2>
               <p>
-               It is a daily task app with a limit of 5 tasks per day, user can add 5 task in a day, on next day he can also add 5 task. In this I have used nextjs, it is a full stack app with frontend and backend deployed
+                It is a daily task app with a limit of 5 tasks per day, user can
+                add 5 task in a day, on next day he can also add 5 task. In this
+                I have used nextjs, it is a full stack app with frontend and
+                backend deployed
               </p>
               <div>
                 <SiNextdotjs />
@@ -199,8 +199,7 @@ export const Projects = () => {
                 <SiJavascript />
                 <FaNodeJs />
                 <DiMongodb />
-                <SiExpress/>
-              
+                <SiExpress />
               </div>
               <div>
                 <a
@@ -220,7 +219,6 @@ export const Projects = () => {
                   <span type="button" className="btn btn--outline">
                     View Code
                   </span>
-                  
                 </a>
               </div>
             </div>
