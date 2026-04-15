@@ -5,7 +5,7 @@ import Brightness2Icon from "@material-ui/icons/Brightness2";
 import WbSunnyRoundedIcon from "@material-ui/icons/WbSunnyRounded";
 import MenuIcon from "@material-ui/icons/Menu";
 import CloseIcon from "@material-ui/icons/Close";
-import resumeFile from "../../Assets/ResumePdf/RaushanKumarResume.pdf";
+import resumeFile from "../../Assets/ResumePdf/raushan_kumar_resume.pdf";
 export const Navbar = () => {
   const [{ themename, toggeltheme }] = React.useContext(ThemeContext);
   const [showNavList, setShowNavList] = React.useState(false);
@@ -26,7 +26,7 @@ export const Navbar = () => {
   };
   const viewResume = () => {
     window.open(
-      "https://drive.google.com/file/d/1HZkZUv4KnlUsZLpOj35lG8U1zEJd1dbN/view"
+      "https://drive.google.com/file/d/1g5_7uymdgMFyrbMPKzbFppj0PMvZwN9x/view?usp=sharing",
     );
   };
   return (
