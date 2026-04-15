@@ -20,10 +20,14 @@ export const About = () => {
         </h1>
         <Type />
         <p className="about__desc" data-aos="fade-right">
-          An inquisitive and highly motivated full-stack web developer with
-          specialization in MERN stack. Have relevant hands-on experience in
-          building multiple websites from scratch. Seeking to pursue a career in
-          a challenging environment to hone industry skills.
+          Full-stack Software Engineer with 3+ years of experience building and
+          scaling web and mobile applications using React.js, React Native,
+          TypeScript, and GraphQL. Proven track record of developing
+          production-grade products from scratch, including complex,
+          performance-critical applications. Experienced in designing scalable
+          architectures, optimizing performance, and delivering seamless user
+          experiences. Driven by solving real-world problems and building
+          impactful, user-focused products.
         </p>
         <div className="about__contact center">
           <a
@@ -63,7 +67,7 @@ export const About = () => {
             <LinkedInIcon />
           </a>
           <a
-            href="https://drive.google.com/file/d/1HZkZUv4KnlUsZLpOj35lG8U1zEJd1dbN/view"
+            href="https://drive.google.com/file/d/1g5_7uymdgMFyrbMPKzbFppj0PMvZwN9x/view?usp=sharing"
             aria-label="github"
             className="link link--icon"
             target="_blank"
@@ -71,15 +75,7 @@ export const About = () => {
           >
             <DescriptionIcon />
           </a>
-          <a
-            href="https://www.facebook.com/profile.php?id=100007460803885&sk=about"
-            aria-label="github"
-            className="link link--icon"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <FacebookIcon />
-          </a>
+
           <a
             href="https://www.google.com/maps/place/Mahanandpur,+Bihar+805111/@24.8478937,85.5074005,15z/data=!3m1!4b1!4m6!3m5!1s0x39f2fdf03236f22f:0xc7399a99685dbd8a!8m2!3d24.8458202!4d85.5071469!16s%2Fg%2F12hpbgj93"
             aria-label="github"
