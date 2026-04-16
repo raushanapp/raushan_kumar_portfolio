@@ -5,7 +5,6 @@ import GitHubIcon from "@material-ui/icons/GitHub";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import EmailIcon from "@material-ui/icons/Email";
 import PhoneIcon from "@material-ui/icons/Phone";
-import FacebookIcon from "@material-ui/icons/Facebook";
 import DescriptionIcon from "@material-ui/icons/Description";
 import PublicIcon from "@material-ui/icons/Public";
 import { Introduction } from "./Introduction";
