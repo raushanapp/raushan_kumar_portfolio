@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import ArrowUpwardIcon from "@material-ui/icons/ArrowUpward";
 import "./ScrollToTop.css";
 
@@ -13,11 +13,13 @@ export const ScrollToTop = () => {
     return () => window.removeEventListener("scroll", toggleVisibility);
   }, []);
 
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
   return isVisible ? (
-    <div className="scroll-top">
-      <a href="#top">
-        <ArrowUpwardIcon fontSize="large" />
-      </a>
+    <div className="scroll-top" onClick={scrollToTop}>
+      <ArrowUpwardIcon fontSize="large" />
     </div>
   ) : null;
 };
