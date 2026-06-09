@@ -1,27 +1,19 @@
 import React from "react";
 import "./Projects.css";
 import { FaReact, FaNodeJs, Facss, FaJava } from "react-icons/fa";
-import {GrMysql} from "react-icons/gr"
-import task from "./task.png"
+import { GrMysql } from "react-icons/gr";
+import task from "./task.png";
 import {
-  SiBlockchaindotcom,
   SiHtml5,
-  SiMaterialui,
-  SiChai,
-  SiEthereum,
   SiExpress,
-  Sicss,
-  SiSocketdotio,
-  SiTailwindcss,
-  SiReactrouter,
   SiJavascript,
-  SiNextdotjs,
   SiChakraui,
   SiRedux,
   SiSpringboot,
   SiAmazonaws,
+  SiNextdotjs,
 } from "react-icons/si";
-import { DiCss3, DiMongodb, } from "react-icons/di";
+import { DiCss3, DiMongodb } from "react-icons/di";
 import { VscJson } from "react-icons/vsc";
 import { IoLogoJavascript } from "react-icons/io";
 export const Projects = () => {

@@ -4,11 +4,10 @@ import { FaReact, FaNodeJs } from "react-icons/fa";
 import {
   SiRedux,
   SiHtml5,
-  SiChakraui,
   SiExpress,
   SiRedis,
   SiTypescript,
-  // SiReduxtoolkit,
+  SiNextdotjs,
 } from "react-icons/si";
 import { DiCss3, DiMongodb, DiPostgresql } from "react-icons/di";
 import { SiJavascript } from "react-icons/si";
@@ -77,6 +76,10 @@ export const Techstacks = () => {
           <div>
             <FaAws />
             <h5>AWS</h5>
+          </div>
+          <div>
+            <SiNextdotjs />
+            <h5>Next.js</h5>
           </div>
         </div>
       </div>
