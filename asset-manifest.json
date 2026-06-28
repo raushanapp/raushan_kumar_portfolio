@@ -1,15 +1,16 @@
 {
   "files": {
     "main.css": "/raushan_kumar_portfolio/static/css/main.7a02b709.css",
-    "main.js": "/raushan_kumar_portfolio/static/js/main.a94473e3.js",
+    "main.js": "/raushan_kumar_portfolio/static/js/main.c58fc28f.js",
+    "static/media/tokenwell.png": "/raushan_kumar_portfolio/static/media/tokenwell.bc39eafec75e0055ae9a.png",
     "static/media/task.png": "/raushan_kumar_portfolio/static/media/task.25e6d3452c6bfbf7591c.png",
     "static/media/raushan_kumar_resume.pdf": "/raushan_kumar_portfolio/static/media/raushan_kumar_resume.e2935a0b5b202b5019fc.pdf",
     "index.html": "/raushan_kumar_portfolio/index.html",
     "main.7a02b709.css.map": "/raushan_kumar_portfolio/static/css/main.7a02b709.css.map",
-    "main.a94473e3.js.map": "/raushan_kumar_portfolio/static/js/main.a94473e3.js.map"
+    "main.c58fc28f.js.map": "/raushan_kumar_portfolio/static/js/main.c58fc28f.js.map"
   },
   "entrypoints": [
     "static/css/main.7a02b709.css",
-    "static/js/main.a94473e3.js"
+    "static/js/main.c58fc28f.js"
   ]
 }
