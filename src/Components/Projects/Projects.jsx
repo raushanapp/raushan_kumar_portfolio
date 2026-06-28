@@ -1,21 +1,17 @@
 import React from "react";
 import "./Projects.css";
-import { FaReact, FaNodeJs, Facss, FaJava } from "react-icons/fa";
+import { FaReact, FaJava } from "react-icons/fa";
 import { GrMysql } from "react-icons/gr";
 import task from "./task.png";
+const TokenWellImg = require("../../Assets/images/tokenwell.png");
 import {
-  SiHtml5,
-  SiExpress,
-  SiJavascript,
   SiChakraui,
   SiRedux,
   SiSpringboot,
   SiAmazonaws,
-  SiNextdotjs,
+  SiExpo,
+  SiTypescript,
 } from "react-icons/si";
-import { DiCss3, DiMongodb } from "react-icons/di";
-import { VscJson } from "react-icons/vsc";
-import { IoLogoJavascript } from "react-icons/io";
 export const Projects = () => {
   return (
     <>
@@ -23,6 +19,42 @@ export const Projects = () => {
         <h2 className="section__title different" data-aos="fade-right">
           Projects
         </h2>
+        <div className="projects_container">
+          <div className="project">
+            <div className="project_videocontainer">
+              <div data-aos="fade-right">
+                <img src={TokenWellImg} alt="TokenWell" />
+              </div>
+            </div>
+            <div className="project_information" data-aos="fade-right">
+              <h2>Tokenwell Automated Crypto Basket</h2>
+              <p>
+                Tokenwell AI-Powered Basket Trading App Built from scratch using
+                React Native & TypeScript. Multi-exchange trading platform with
+                AI basket generation, real-time data, secure Clerk auth, and
+                performance-optimised architecture.
+              </p>
+              <div>
+                <FaReact />
+                <SiRedux />
+                <SiExpo />
+                <SiTypescript />
+              </div>
+              <div>
+                <a
+                  href="https://apps.apple.com/ca/app/tokenwell/id1639369761"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <span type="button" className="btn btn--outline onbt">
+                    See this Live
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div className="projects_container">
           <div className="project">
             <div className="project_videocontainer">
@@ -56,7 +88,7 @@ export const Projects = () => {
                     See this Live
                   </span>
                 </a>
-                {/* <a
+                <a
                   href="https://github.com/masai-builds/AIMEELearningManagmentPortal"
                   target="_blank"
                   rel="noreferrer"
@@ -64,7 +96,7 @@ export const Projects = () => {
                   <span type="button" className="btn btn--outline">
                     View Code
                   </span>
-                </a> */}
+                </a>
               </div>
             </div>
           </div>
@@ -104,107 +136,8 @@ export const Projects = () => {
                     See this Live
                   </span>
                 </a>
-                {/* <a
+                <a
                   href="https://github.com/masai-builds/masai-tutorials-team3"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <span type="button" className="btn btn--outline">
-                    View Code
-                  </span>
-                </a> */}
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div className="projects_container">
-          <div className="project">
-            <div className="project_videocontainer">
-              <div data-aos="fade-right">
-                <img
-                  src="https://strong-dodol-f37473.netlify.app/images/HomePage.jpg"
-                  alt=""
-                />
-              </div>
-            </div>
-            <div className="project_information" data-aos="fade-right">
-              <h2>Rentomojo Clone</h2>
-              <p>
-                This project is the clone of RentoMojo website. RentoMojo is an
-                online rental platform that provides furniture, appliances and
-                electronics (mobiles, laptops) on a monthly rental basis. It is
-                India's leading rental platform.
-              </p>
-              <div>
-                <DiCss3 />
-                <IoLogoJavascript />
-                <SiHtml5 />
-                <FaReact />
-                <SiRedux />
-                <SiChakraui />
-                <VscJson />
-              </div>
-              <div>
-                <a
-                  href="https://clone-rentomojo.netlify.app/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <span type="button" className="btn btn--outline onbt">
-                    See this Live
-                  </span>
-                </a>
-                <a
-                  href="https://github.com/psnarkhede/cruel-scale-8764"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <span type="button" className="btn btn--outline">
-                    View Code
-                  </span>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div className="projects_container">
-          <div className="project">
-            <div className="project_videocontainer">
-              <div data-aos="fade-right">
-                <img src={task} alt="" />
-              </div>
-            </div>
-            <div className="project_information" data-aos="fade-right">
-              <h2>Daily Task App</h2>
-              <p>
-                It is a daily task app with a limit of 5 tasks per day, user can
-                add 5 task in a day, on next day he can also add 5 task. In this
-                I have used nextjs, it is a full stack app with frontend and
-                backend deployed
-              </p>
-              <div>
-                <SiNextdotjs />
-                <DiCss3 />
-                <SiHtml5 />
-                <SiJavascript />
-                <FaNodeJs />
-                <DiMongodb />
-                <SiExpress />
-              </div>
-              <div>
-                <a
-                  href="https://frontend-delta-eight-14.vercel.app/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <span type="button" className="btn btn--outline onbt">
-                    See this Live
-                  </span>
-                </a>
-                <a
-                  href="https://github.com/gautamverma095/DailyTaskApp"
                   target="_blank"
                   rel="noreferrer"
                 >

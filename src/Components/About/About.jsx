@@ -19,7 +19,7 @@ export const About = () => {
         </h1>
         <Type />
         <p className="about__desc" data-aos="fade-right">
-          Full-stack Software Engineer with 3 years of experience building and
+          Full-stack Software Engineer with 3+ years of experience building and
           scaling web and mobile applications using React, React Native,
           TypeScript, Node.js, and GraphQL. Currently building end-to-end
           full-stack applications, with experience in designing scalable
