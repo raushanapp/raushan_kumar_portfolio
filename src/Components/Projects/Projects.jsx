@@ -2,8 +2,8 @@ import React from "react";
 import "./Projects.css";
 import { FaReact, FaJava } from "react-icons/fa";
 import { GrMysql } from "react-icons/gr";
-import task from "./task.png";
 const TokenWellImg = require("../../Assets/images/tokenwell.png");
+const PadelUnderGround = require("../../Assets/images/padel.png");
 import {
   SiChakraui,
   SiRedux,
@@ -19,6 +19,41 @@ export const Projects = () => {
         <h2 className="section__title different" data-aos="fade-right">
           Projects
         </h2>
+
+        <div className="projects_container">
+          <div className="project">
+            <div className="project_videocontainer">
+              <div data-aos="fade-right">
+                <img src={PadelUnderGround} alt="PadelUnderGround" />
+              </div>
+            </div>
+            <div className="project_information" data-aos="fade-right">
+              <h2>Padel Underground Arena</h2>
+              <p>
+                Production sports application for managing padel matches, score
+                tracking, ratings, and player engagement.
+              </p>
+              <div>
+                <FaReact />
+                <SiRedux />
+                <SiExpo />
+                <SiTypescript />
+              </div>
+              <div>
+                <a
+                  href="https://apps.apple.com/us/app/underground-arena/id6754181818"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <span type="button" className="btn btn--outline onbt">
+                    See this Live
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div className="projects_container">
           <div className="project">
             <div className="project_videocontainer">

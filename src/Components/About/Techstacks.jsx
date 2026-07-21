@@ -8,6 +8,7 @@ import {
   SiRedis,
   SiTypescript,
   SiNextdotjs,
+  SiCiCd,
 } from "react-icons/si";
 import { DiCss3, DiMongodb, DiPostgresql } from "react-icons/di";
 import { SiJavascript } from "react-icons/si";
