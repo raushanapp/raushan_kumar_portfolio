@@ -220,10 +220,9 @@ export const Projects = () => {
                   href="https://github.com/raushanapp/full-stack-space-project"
                   target="_blank"
                   rel="noreferrer"
+                  className="btn btn--outline"
                 >
-                  <span type="button" className="btn btn--outline">
-                    View Code
-                  </span>
+                  View Code
                 </a>
               </div>
             </div>
