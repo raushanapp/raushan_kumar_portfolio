@@ -31,11 +31,17 @@
   height: 90%;
   border: 10px solid var(--clr-primary);
   border-radius: 30px;
+  overflow: hidden;
 }
 .project_videocontainer > div > img {
   width: 100%;
   height: 100%;
   border-radius: 20px;
+  transition: transform 0.3s ease;
+}
+
+.project:hover .project_videocontainer > div > img {
+  transform: scale(1.03);
 }
 
 .project_information {
