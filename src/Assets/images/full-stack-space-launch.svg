@@ -14,12 +14,6 @@
   <circle cx="932" cy="540" r="5" fill="#F8FAFC"/>
   <circle cx="1014" cy="478" r="4" fill="#F8FAFC"/>
   <circle cx="986" cy="618" r="6" fill="#F8FAFC"/>
-  <text x="600" y="655" textAnchor="middle" fill="#F8FAFC" fontFamily="Poppins, Arial, sans-serif" fontSize="54" fontWeight="600">
-    Full-Stack Space Launch Application
-  </text>
-  <text x="600" y="705" textAnchor="middle" fill="#C7D2FE" fontFamily="Poppins, Arial, sans-serif" fontSize="28">
-    Mission scheduling • React • Node.js • Express • MongoDB • Docker
-  </text>
   <defs>
     <linearGradient id="spaceGradient" x1="80" y1="80" x2="1120" y2="720" gradientUnits="userSpaceOnUse">
       <stop stopColor="#111827"/>
