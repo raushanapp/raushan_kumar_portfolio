@@ -4,6 +4,7 @@ import { FaReact, FaJava, FaNodeJs } from "react-icons/fa";
 import { GrMysql } from "react-icons/gr";
 const TokenWellImg = require("../../Assets/images/tokenwell.png");
 const PadelUnderGround = require("../../Assets/images/padel.png");
+const FullStackSpaceLaunchImg = require("../../Assets/images/full-stack-space-launch.svg");
 import {
   SiChakraui,
   SiRedux,
@@ -193,7 +194,7 @@ export const Projects = () => {
             <div className="project_videocontainer">
               <div data-aos="fade-right">
                 <img
-                  src="https://placehold.co/1200x800/0b1020/9fd3ff?text=Space+Launch+Application"
+                  src={FullStackSpaceLaunchImg}
                   alt="Full-Stack Space Launch Application"
                 />
               </div>
