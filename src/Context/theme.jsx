@@ -5,10 +5,10 @@ const ThemeContext = React.createContext();
 
 const ThemeProvider = ({ children }) => {
   const [themename, setthemename] = React.useState(
-    () => localStorage.getItem("theme") || "light",
+    () => localStorage.getItem("theme") || "dark",
   );
   const toggeltheme = () => {
-    const nextTheme = themename === "light" ? "dark" : "light";
+    const nextTheme = themename === "dark" ? "light" : "dark";
     setthemename(nextTheme);
     localStorage.setItem("theme", nextTheme);
   };

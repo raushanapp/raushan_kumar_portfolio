@@ -7,11 +7,11 @@ export const Header = () => {
   const [{ themename }] = React.useContext(ThemeContext);
   return (
     <header className={`${themename} header center`}>
-      <h3 className="glass-panel header__brand">
+      {/* <h3 className="glass-panel header__brand">
         <a href="#home" className="link">
           Raushan Kumar
         </a>
-      </h3>
+      </h3> */}
       <Navbar />
     </header>
   );

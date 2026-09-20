@@ -40,7 +40,7 @@ const contactLinks = [
 export const About = () => {
   return (
     <>
-      <div className="about center">
+      <section className="about center">
         <motion.h1 {...fadeInUp()}>
           Hi, I am <span className="about__name">Raushan Kumar</span>
         </motion.h1>
@@ -51,7 +51,7 @@ export const About = () => {
           problems, writing clean and maintainable code, and turning ideas into
           reliable products that create real value.
         </motion.p>
-        <motion.div
+        <motion.section
           className="about__contact center glass-panel"
           {...fadeInUp(0.3)}
         >
@@ -67,8 +67,8 @@ export const About = () => {
               <Icon />
             </a>
           ))}
-        </motion.div>
-      </div>
+        </motion.section>
+      </section>
       <Introduction />
       <section id="skills">
         <Techstacks />

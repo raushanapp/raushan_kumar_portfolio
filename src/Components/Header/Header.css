@@ -2,7 +2,7 @@
   height: 4.5em;
   width: calc(100% - 2em);
   margin: 1em auto 0;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   gap: 1em;
   position: fixed;
