@@ -40,7 +40,8 @@
   transition: transform 0.3s ease;
 }
 
-.project:hover .project_videocontainer > div > img {
+.project:hover .project_videocontainer > div > img,
+.project:focus-within .project_videocontainer > div > img {
   transform: scale(1.03);
 }
 
