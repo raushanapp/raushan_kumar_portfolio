@@ -1,8 +1,8 @@
 <svg width="1200" height="800" viewBox="0 0 1200 800" fill="none" xmlns="http://www.w3.org/2000/svg">
   <rect width="1200" height="800" rx="64" fill="#0B1020"/>
   <rect x="80" y="80" width="1040" height="640" rx="48" fill="url(#spaceGradient)"/>
-  <circle cx="915" cy="240" r="92" fill="#9FD3FF" fill-opacity="0.22"/>
-  <circle cx="285" cy="585" r="134" fill="#7C3AED" fill-opacity="0.18"/>
+  <circle cx="915" cy="240" r="92" fill="#9FD3FF" fillOpacity="0.22"/>
+  <circle cx="285" cy="585" r="134" fill="#7C3AED" fillOpacity="0.18"/>
   <path d="M590 460L665 315L720 370L645 515L590 460Z" fill="#E2E8F0"/>
   <path d="M537 520L590 460L645 515L580 565L537 520Z" fill="#9FD3FF"/>
   <path d="M665 315L735 250L770 285L720 370L665 315Z" fill="#F8FAFC"/>
@@ -14,16 +14,16 @@
   <circle cx="932" cy="540" r="5" fill="#F8FAFC"/>
   <circle cx="1014" cy="478" r="4" fill="#F8FAFC"/>
   <circle cx="986" cy="618" r="6" fill="#F8FAFC"/>
-  <text x="600" y="655" text-anchor="middle" fill="#F8FAFC" font-family="Poppins, Arial, sans-serif" font-size="54" font-weight="600">
+  <text x="600" y="655" textAnchor="middle" fill="#F8FAFC" fontFamily="Poppins, Arial, sans-serif" fontSize="54" fontWeight="600">
     Full-Stack Space Launch Application
   </text>
-  <text x="600" y="705" text-anchor="middle" fill="#C7D2FE" font-family="Poppins, Arial, sans-serif" font-size="28">
+  <text x="600" y="705" textAnchor="middle" fill="#C7D2FE" fontFamily="Poppins, Arial, sans-serif" fontSize="28">
     Mission scheduling • React • Node.js • Express • MongoDB • Docker
   </text>
   <defs>
     <linearGradient id="spaceGradient" x1="80" y1="80" x2="1120" y2="720" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#111827"/>
-      <stop offset="1" stop-color="#1D4ED8"/>
+      <stop stopColor="#111827"/>
+      <stop offset="1" stopColor="#1D4ED8"/>
     </linearGradient>
   </defs>
 </svg>
