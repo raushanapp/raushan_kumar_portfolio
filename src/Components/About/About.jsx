@@ -46,10 +46,10 @@ export const About = () => {
         </motion.h1>
         <Type />
         <motion.p className="about__desc" {...fadeInUp(0.15)}>
-          Full-Stack Software Engineer with 3+ years of experience building
-          production web and mobile applications. Specialized in React, React
-          Native, TypeScript, Node.js, and GraphQL. Passionate about creating
-          scalable, high-performance products used by real users.
+          Software Engineer with 3+ years of experience building and shipping
+          production-ready web and mobile applications. I enjoy solving complex
+          problems, writing clean and maintainable code, and turning ideas into
+          reliable products that create real value.
         </motion.p>
         <motion.div
           className="about__contact center glass-panel"
