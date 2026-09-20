@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/raushan_kumar_portfolio/static/css/main.8fff4e27.css",
-    "main.js": "/raushan_kumar_portfolio/static/js/main.4f84281e.js",
+    "main.css": "/raushan_kumar_portfolio/static/css/main.e274b3f7.css",
+    "main.js": "/raushan_kumar_portfolio/static/js/main.7bacada9.js",
     "static/media/full-stack-space.png": "/raushan_kumar_portfolio/static/media/full-stack-space.e6244b0482124bb2aa08.png",
     "static/media/tokenwell.png": "/raushan_kumar_portfolio/static/media/tokenwell.292e91f1cc060f72ba56.png",
     "static/media/padel.png": "/raushan_kumar_portfolio/static/media/padel.6a12cdfa5f7216b76f48.png",
     "static/media/raushan_kumar_resume.pdf": "/raushan_kumar_portfolio/static/media/raushan_kumar_resume.e2935a0b5b202b5019fc.pdf",
     "index.html": "/raushan_kumar_portfolio/index.html",
-    "main.8fff4e27.css.map": "/raushan_kumar_portfolio/static/css/main.8fff4e27.css.map",
-    "main.4f84281e.js.map": "/raushan_kumar_portfolio/static/js/main.4f84281e.js.map"
+    "main.e274b3f7.css.map": "/raushan_kumar_portfolio/static/css/main.e274b3f7.css.map",
+    "main.7bacada9.js.map": "/raushan_kumar_portfolio/static/js/main.7bacada9.js.map"
   },
   "entrypoints": [
-    "static/css/main.8fff4e27.css",
-    "static/js/main.4f84281e.js"
+    "static/css/main.e274b3f7.css",
+    "static/js/main.7bacada9.js"
   ]
 }
