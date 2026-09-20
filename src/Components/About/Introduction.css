@@ -15,10 +15,17 @@
   justify-content: center;
 }
 
-.introduction_logocontainer > img {
-  width: 55%;
-  height: 100%;
-  border-radius: 50px;
+.introduction_frame {
+  padding: 1em;
+  border-radius: 30px;
+}
+
+.introduction_logocontainer > .introduction_frame > img {
+  display: block;
+  width: 55vw;
+  max-width: 340px;
+  height: auto;
+  border-radius: 24px;
 }
 
 .introduction_datacontainer {
@@ -35,7 +42,7 @@
 }
 
 .introduction_datacontainer > h4 {
-  font-size: 1.1em;
+  font-size: var(--fs-base);
   margin-top: 0.5em;
 }
 
@@ -55,15 +62,15 @@
     margin-bottom: 3em;
     flex-basis: 30%;
   }
-  .introduction_logocontainer > img {
-    width: 60%;
-    height: 100%;
-    border-radius: 20px;
+  .introduction_logocontainer > .introduction_frame > img {
+    width: 60vw;
+    max-width: 260px;
+    height: auto;
+    border-radius: 16px;
   }
   .introduction_datacontainer {
     padding-left: 10%;
     padding-right: 10%;
     flex-basis: 70%;
   }
- 
 }

@@ -1,0 +1,33 @@
+.github-stats {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5em;
+  margin-top: 1.5em;
+}
+
+.github-stats__card {
+  padding: 1.2em;
+  border-radius: 20px;
+  max-width: 100%;
+}
+
+.github-stats__card img {
+  display: block;
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.github-calendar {
+  margin-top: 2em;
+  padding: 1.5em;
+  border-radius: 20px;
+  overflow-x: auto;
+}
+
+@media (max-width: 600px) {
+  .github-stats__card,
+  .github-calendar {
+    padding: 1em;
+  }
+}

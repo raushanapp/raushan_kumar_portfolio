@@ -4,9 +4,13 @@ import PropTypes from "prop-types";
 const ThemeContext = React.createContext();
 
 const ThemeProvider = ({ children }) => {
-  const [themename, setthemename] = React.useState("light");
+  const [themename, setthemename] = React.useState(
+    () => localStorage.getItem("theme") || "light",
+  );
   const toggeltheme = () => {
-    themename === "light" ? setthemename("dark") : setthemename("light");
+    const nextTheme = themename === "light" ? "dark" : "light";
+    setthemename(nextTheme);
+    localStorage.setItem("theme", nextTheme);
   };
 
   return (
@@ -17,7 +21,7 @@ const ThemeProvider = ({ children }) => {
 };
 
 ThemeProvider.propTypes = {
-  children: PropTypes.node.isRequired
+  children: PropTypes.node.isRequired,
 };
 
 export { ThemeProvider, ThemeContext };

@@ -4,52 +4,52 @@
 .techsection {
   width: 100%;
   text-align: center;
-  background-color: var(--clr-bg);
-  height: 50vh;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 1.5em;
 }
 
-.techsection > div {
-  width: 12%;
+.skill-card {
   height: 20vh;
-  max-height: 115px;
-  box-shadow: var(--shadow);
+  max-height: 130px;
   z-index: 1;
-  border-radius: 20px;
-  margin: 1.5%;
-  float: left;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  transition: all 0.5s ease 0s;
+  padding: 1.1em 0.6em;
+  /* smaller cards are more prone to uneven blob bleed-through, so use the more opaque tint */
+  background: var(--glass-bg-strong);
+  transition:
+    transform 0.25s ease,
+    border-color 0.25s ease;
 }
-.techsection > div:hover {
-  background-color: var(--clr-bg);
-  overflow: hidden;
-  transform: scale(1.08);
-  box-shadow:
-    rgba(0, 0, 0, 0.36) 0px 10px 36px 0px,
-    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
-  border: 1px solid var(--clr-primary);
+.skill-card:hover {
+  transform: translateY(-3px);
 }
 
-.techsection > div > svg {
-  font-size: 8vh;
-  color: var(--clr-primary);
+.skill-card__label {
+  font-size: var(--fs-min);
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  background: transparent;
 }
-.techsection > div > h5 {
-  position: relative;
-  top: 8px;
+
+.skill-card__icon {
+  font-size: 2.6em;
+  color: var(--clr-primary);
+  transition: color 0.3s ease;
+}
+.skill-card:hover .skill-card__icon {
+  color: var(--glass-glow);
 }
 
 @media (max-width: 600px) {
   .techsection {
-    height: 120vh;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1em;
   }
-  .techsection > div {
-    width: 40%;
-    margin-right: 5%;
-    margin-bottom: 2%;
+  .skill-card {
     height: 18vh;
   }
 }

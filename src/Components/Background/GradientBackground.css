@@ -1,0 +1,69 @@
+.gradient-bg {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  overflow: hidden;
+  pointer-events: none;
+  background: var(--clr-bg);
+}
+
+.gradient-bg__blob {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(100px);
+  opacity: 0.4;
+  will-change: transform;
+  animation: blob-float 40s ease-in-out infinite;
+}
+
+.gradient-bg__blob--1 {
+  top: 12%;
+  left: -8%;
+  width: 40vw;
+  height: 40vw;
+  background: var(--blob-1);
+  animation-duration: 42s;
+}
+
+.gradient-bg__blob--2 {
+  top: 30%;
+  right: -12%;
+  width: 36vw;
+  height: 36vw;
+  background: var(--blob-2);
+  animation-duration: 48s;
+  animation-delay: -10s;
+}
+
+.gradient-bg__blob--3 {
+  bottom: -15%;
+  left: 20%;
+  width: 34vw;
+  height: 34vw;
+  background: var(--blob-3);
+  animation-duration: 45s;
+  animation-delay: -20s;
+}
+
+@keyframes blob-float {
+  0%,
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+  50% {
+    transform: translate(3%, 3%) scale(1.03);
+  }
+}
+
+@media (max-width: 600px) {
+  .gradient-bg__blob {
+    filter: blur(70px);
+    opacity: 0.3;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .gradient-bg__blob {
+    animation: none;
+  }
+}

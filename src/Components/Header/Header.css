@@ -1,20 +1,49 @@
-
 .header {
-  height: 8em;
-  width: 100%;
-  margin: 0 auto;
+  height: 4.5em;
+  width: calc(100% - 2em);
+  margin: 1em auto 0;
   justify-content: space-between;
+  align-items: center;
+  gap: 1em;
   position: fixed;
-  z-index: 1;
+  left: 0;
+  right: 0;
+  z-index: 10;
   top: 0;
-  padding: 10px 40px;
+  padding: 0;
+}
+
+.header__brand {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 1.6em;
+  border-radius: 999px;
+}
+
+.header h3 a {
+  font-weight: 700;
+  background: transparent;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.header h3 a:hover,
+.header h3 a:focus,
+.header h3 a:active,
+.header h3 a:visited {
+  background: transparent;
+  outline: none;
+  box-shadow: none;
 }
 
 @media (max-width: 600px) {
   .header {
-    height: 6em;
+    height: 4em;
+    width: 94%;
+    margin-top: 0.6em;
     position: fixed;
-    z-index: 1;
+    z-index: 10;
     top: 0;
+    padding: 0;
   }
 }

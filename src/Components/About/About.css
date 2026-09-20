@@ -1,26 +1,30 @@
 .about {
   flex-direction: column;
-  margin-top: 7.4em
-
+  margin-top: 7.4em;
 }
 .about__name {
   color: var(--clr-primary);
 }
 .about > :nth-child(2) {
   margin-top: 1.2em;
-  font-size: 2rem;
+  font-size: var(--fs-lg);
   line-height: 1.2;
   color: var(--clr-fg-alt);
 }
 
 .about__desc {
-  font-size: 1rem;
+  font-size: var(--fs-sm);
   max-width: 80%;
 }
 
 .about__desc,
 .about__contact {
   margin-top: 2.4em;
+}
+
+.about__contact {
+  padding: 0.9em 1.6em;
+  border-radius: 999px;
 }
 
 .about .link--icon {
@@ -38,13 +42,11 @@
     justify-content: center;
     align-items: center;
     margin-left: 15%;
-  
   }
   .about > :nth-child(2) {
-    font-size: 1.5rem;
-    
+    font-size: var(--fs-md);
   }
-  .about__desc{
+  .about__desc {
     margin-right: 7%;
   }
 }
