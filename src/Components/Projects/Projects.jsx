@@ -1,14 +1,18 @@
 import React from "react";
 import "./Projects.css";
-import { FaReact, FaJava } from "react-icons/fa";
+import { FaReact, FaJava, FaNodeJs } from "react-icons/fa";
 import { GrMysql } from "react-icons/gr";
 const TokenWellImg = require("../../Assets/images/tokenwell.png");
 const PadelUnderGround = require("../../Assets/images/padel.png");
+const FullStackSpaceLaunchImg = require("../../Assets/images/full-stack-space-launch.svg");
 import {
   SiChakraui,
   SiRedux,
   SiSpringboot,
   SiAmazonaws,
+  SiDocker,
+  SiExpress,
+  SiMongodb,
   SiExpo,
   SiTypescript,
 } from "react-icons/si";
@@ -179,6 +183,46 @@ export const Projects = () => {
                   <span type="button" className="btn btn--outline">
                     View Code
                   </span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="projects_container">
+          <div className="project">
+            <div className="project_videocontainer">
+              <div data-aos="fade-right">
+                <img
+                  src={FullStackSpaceLaunchImg}
+                  alt="Full-Stack Space Launch Application"
+                />
+              </div>
+            </div>
+            <div className="project_information" data-aos="fade-right">
+              <h2>Full-Stack Space Launch Application</h2>
+              <p>
+                A full-stack mission-scheduling app for interstellar travel to
+                habitable Kepler exoplanets. Built with React, Node.js,
+                Express, and MongoDB, featuring a futuristic sci-fi themed UI
+                (Arwes), REST API for launches/planets, Docker support, and PM2
+                clustering for production.
+              </p>
+              <div>
+                <FaReact />
+                <FaNodeJs />
+                <SiExpress />
+                <SiMongodb />
+                <SiDocker />
+              </div>
+              <div>
+                <a
+                  href="https://github.com/raushanapp/full-stack-space-project"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="btn btn--outline"
+                >
+                  View Code
                 </a>
               </div>
             </div>
