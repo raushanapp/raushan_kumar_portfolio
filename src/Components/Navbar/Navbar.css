@@ -77,3 +77,10 @@
     transform: translateY(0);
   }
 }
+
+button.link--nav {
+  border: 0;
+  font: inherit;
+  font-weight: 500;
+  cursor: pointer;
+}

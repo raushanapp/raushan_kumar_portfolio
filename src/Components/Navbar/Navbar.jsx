@@ -6,7 +6,7 @@ import Brightness2Icon from "@material-ui/icons/Brightness2";
 import WbSunnyRoundedIcon from "@material-ui/icons/WbSunnyRounded";
 import MenuIcon from "@material-ui/icons/Menu";
 import CloseIcon from "@material-ui/icons/Close";
-import resumeFile from "../../Assets/ResumePdf/raushan_kumar_resume.pdf";
+import { ResumeModal } from "../ResumeModal/ResumeModal";
 
 const navLinks = [
   { id: "#home", label: "Home" },
@@ -19,26 +19,25 @@ const navLinks = [
 export const Navbar = () => {
   const [{ themename, toggeltheme }] = React.useContext(ThemeContext);
   const [showNavList, setShowNavList] = React.useState(false);
+  const [isResumeModalOpen, setIsResumeModalOpen] = React.useState(false);
 
   const toggleNavList = (hash) => {
-    const element = document.getElementById(hash.replace("#", ""));
+    const element =
+      typeof hash === "string"
+        ? document.getElementById(hash.replace("#", ""))
+        : null;
     if (element) {
       element.scrollIntoView();
     }
     setShowNavList(!showNavList);
   };
-  const handleResume = () => {
-    let alink = document.createElement("a");
-    alink.href = resumeFile;
-    alink.download = "Raushan Kumar Resume.pdf";
-    alink.click();
-    viewResume();
+
+  const openResumeModal = () => {
+    setIsResumeModalOpen(true);
+    setShowNavList(false);
   };
-  const viewResume = () => {
-    window.open(
-      "https://drive.google.com/file/d/1g5_7uymdgMFyrbMPKzbFppj0PMvZwN9x/view?usp=sharing",
-    );
-  };
+  const closeResumeModal = () => setIsResumeModalOpen(false);
+
   return (
     <>
       <nav className="center nav">
@@ -62,14 +61,13 @@ export const Navbar = () => {
             </li>
           ))}
           <li className="nav__list-item" style={{ "--nav-i": navLinks.length }}>
-            <a
-              onClick={handleResume}
+            <button
+              type="button"
+              onClick={openResumeModal}
               className="link link--nav"
-              target="_blank"
-              rel="noreferrer"
             >
               Resume
-            </a>
+            </button>
           </li>
         </ul>
         <button
@@ -104,6 +102,7 @@ export const Navbar = () => {
           {showNavList ? <CloseIcon /> : <MenuIcon />}
         </button>
       </nav>
+      <ResumeModal isOpen={isResumeModalOpen} onClose={closeResumeModal} />
     </>
   );
 };

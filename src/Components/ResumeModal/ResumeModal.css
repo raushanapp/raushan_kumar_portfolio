@@ -1,0 +1,68 @@
+.resume-modal__backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1em;
+  background: rgba(0, 0, 0, 0.55);
+}
+
+.resume-modal {
+  position: relative;
+  width: 100%;
+  max-width: 380px;
+  padding: 2em 1.5em 1.5em;
+  text-align: center;
+  color: var(--clr-fg);
+  background: var(--glass-bg-strong, var(--glass-bg));
+}
+
+.resume-modal__close {
+  position: absolute;
+  top: 0.5em;
+  right: 0.5em;
+  display: inline-flex;
+  padding: 0.25em;
+  color: inherit;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+.resume-modal__options {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8em;
+  margin-top: 1.2em;
+}
+
+.resume-modal__option {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7em;
+  padding: 0.9em 1em;
+}
+
+.resume-modal__actions {
+  display: flex;
+  justify-content: center;
+  gap: 0.6em;
+}
+
+.resume-modal__action {
+  padding: 0.4em 1.1em;
+  font: inherit;
+  color: var(--clr-primary);
+  background: transparent;
+  border: 1px solid var(--clr-primary);
+  border-radius: 999px;
+  cursor: pointer;
+}
+
+.resume-modal__action:hover,
+.resume-modal__action:focus-visible {
+  color: var(--clr-bg, #fff);
+  background: var(--clr-primary);
+}
