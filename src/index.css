@@ -22,6 +22,20 @@
   --fs-md: 1.25rem;
   --fs-lg: 1.5rem;
   --fs-max: 1.75rem;
+
+  /* responsive spacing tokens: components consume these, only the mobile override below changes them */
+  --section-gap: 5em;
+  --hero-offset: 7.4em;
+  --content-gap: clamp(1.5em, 5vw, 3em);
+  --panel-pad: 1.2em;
+}
+
+@media (max-width: 600px) {
+  :root {
+    --section-gap: 4em;
+    --hero-offset: 5.4em;
+    --panel-pad: 1em;
+  }
 }
 
 html {

@@ -12,6 +12,8 @@
 }
 .nav__list-item {
   margin-left: 1.5em;
+  display: flex;
+  align-items: center;
 }
 .nav__list-item:first-child {
   margin-left: 0;
@@ -79,6 +81,7 @@
 }
 
 button.link--nav {
+  line-height: inherit;
   border: 0;
   font: inherit;
   font-weight: 500;

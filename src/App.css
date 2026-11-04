@@ -89,7 +89,7 @@ main {
 }
 
 .section {
-  margin-top: 5em;
+  margin-top: var(--section-gap);
 }
 
 .section__title {
@@ -221,10 +221,4 @@ main {
 
 .btn--icon:active {
   transform: translateY(-5px);
-}
-
-@media (max-width: 600px) {
-  .section {
-    margin-top: 4em;
-  }
 }

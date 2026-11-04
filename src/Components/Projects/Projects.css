@@ -12,10 +12,6 @@
     color-mix(in srgb, var(--glass-bg-strong) 92%, transparent),
     var(--glass-bg)
   );
-  transition: transform 0.25s ease;
-}
-.project:hover {
-  transform: translateY(-3px);
 }
 
 .project_media {
@@ -97,11 +93,14 @@
   display: flex;
   font-size: 1.8em;
   color: var(--clr-primary);
-  transition: color 0.2s ease-in-out;
+  transition:
+    color 0.2s ease-in-out,
+    transform 0.2s ease-in-out;
 }
 
 .project_techlist > li:hover {
   color: var(--glass-glow);
+  transform: translateY(-3px) scale(1.15);
 }
 
 .project_links {

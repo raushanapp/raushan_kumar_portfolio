@@ -3,7 +3,13 @@ import "./Projects.css";
 import { motion } from "framer-motion";
 import { FaReact, FaJava, FaNodeJs } from "react-icons/fa";
 import { GrMysql } from "react-icons/gr";
-import { fadeInX } from "../../utils/motion";
+import {
+  hoverLift,
+  popItem,
+  riseItem,
+  staggerContainer,
+  staggerVariants,
+} from "../../utils/motion";
 const TokenWellImg = require("../../Assets/images/tokenwell.png");
 const PadelUnderGround = require("../../Assets/images/padel.png");
 const FullStackSpaceLaunchImg = require("../../Assets/images/full-stack-space.png");
@@ -112,44 +118,48 @@ const projectList = [
   },
 ];
 
-const ProjectCard = ({ project, index }) => {
-  const fromLeft = index % 2 === 0;
-  return (
-    <motion.article
-      className={`project glass-panel ${fromLeft ? "" : "project--reverse"}`}
-      {...fadeInX(fromLeft)}
-      viewport={{ once: true, amount: 0.2 }}
-    >
-      <figure className="project_media">
-        <img src={project.image} alt={project.alt} />
-      </figure>
-      <div className="project_information">
-        <h3>{project.title}</h3>
-        <p>{project.description}</p>
-        <ul className="project_techlist">
-          {project.icons.map((Icon, i) => (
-            <li key={i}>
-              <Icon />
-            </li>
-          ))}
-        </ul>
-        <footer className="project_links">
-          {project.links.map((linkItem) => (
-            <a
-              key={linkItem.href}
-              href={linkItem.href}
-              target="_blank"
-              rel="noreferrer"
-              className="btn btn--outline onbt"
-            >
-              {linkItem.label}
-            </a>
-          ))}
-        </footer>
-      </div>
-    </motion.article>
-  );
-};
+const ProjectCard = ({ project, index }) => (
+  <motion.article
+    className={`project glass-panel ${index % 2 === 0 ? "" : "project--reverse"}`}
+    {...staggerContainer(0.1, 0, { hidden: { opacity: 0 }, visible: { opacity: 1 } })}
+    {...hoverLift}
+  >
+    <motion.figure className="project_media" variants={popItem}>
+      <img src={project.image} alt={project.alt} />
+    </motion.figure>
+    <div className="project_information">
+      <motion.h3 variants={riseItem}>{project.title}</motion.h3>
+      <motion.p variants={riseItem}>{project.description}</motion.p>
+      <motion.ul
+        className="project_techlist"
+        variants={staggerVariants(0.05)}
+      >
+        {project.icons.map((Icon, i) => (
+          <motion.li key={i} variants={popItem}>
+            <Icon />
+          </motion.li>
+        ))}
+      </motion.ul>
+      <motion.footer
+        className="project_links"
+        variants={staggerVariants(0.08)}
+      >
+        {project.links.map((linkItem) => (
+          <motion.a
+            key={linkItem.href}
+            href={linkItem.href}
+            target="_blank"
+            rel="noreferrer"
+            className="btn btn--outline onbt"
+            variants={riseItem}
+          >
+            {linkItem.label}
+          </motion.a>
+        ))}
+      </motion.footer>
+    </div>
+  </motion.article>
+);
 
 export const Projects = () => {
   return (

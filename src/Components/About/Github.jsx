@@ -2,7 +2,12 @@ import React from "react";
 import Githubcalendar from "react-github-calendar";
 import { motion } from "framer-motion";
 import "./Github.css";
-import { fadeInUp } from "../../utils/motion";
+import {
+  hoverLift,
+  popItem,
+  scaleIn,
+  staggerContainer,
+} from "../../utils/motion";
 
 const colourTheme = {
   background: "transparent",
@@ -29,31 +34,46 @@ const statCards = [
   },
 ];
 
+// Remote stat images arrive at unpredictable times, so fade each in once it loads instead of popping in.
+const FadeImage = (props) => {
+  const [loaded, setLoaded] = React.useState(false);
+  const ref = React.useRef(null);
+  // A cached image can finish before onLoad is attached.
+  React.useEffect(() => {
+    if (ref.current?.complete) setLoaded(true);
+  }, []);
+  return (
+    <img
+      {...props}
+      ref={ref}
+      alt={props.alt}
+      className={`fade-image ${loaded ? "fade-image--loaded" : ""}`}
+      onLoad={() => setLoaded(true)}
+    />
+  );
+};
+
 export const Github = () => {
   return (
     <section className="section">
       <h2 className="section__title">
         GitHub <span className="different"> Analytics</span>
       </h2>
-      <motion.div className="github-stats" {...fadeInUp()}>
+      <motion.div className="github-stats" {...staggerContainer(0.12)}>
         {statCards.map(({ alt, src }) => (
-          <a
+          <motion.a
             key={src}
             href="https://github.com/raushanapp"
             className="glass-panel github-stats__card"
+            variants={popItem}
+            {...hoverLift}
           >
-            <img height="160em" src={src} alt={alt} />
-          </a>
+            <FadeImage height="160em" src={src} alt={alt} />
+          </motion.a>
         ))}
       </motion.div>
 
-      <motion.div
-        className="glass-panel github-calendar"
-        initial={{ opacity: 0, scale: 0.95 }}
-        whileInView={{ opacity: 1, scale: 1 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.6, delay: 0.1 }}
-      >
+      <motion.div className="glass-panel github-calendar" {...scaleIn(0.1)}>
         <Githubcalendar
           username="raushanapp"
           blockSize={15}

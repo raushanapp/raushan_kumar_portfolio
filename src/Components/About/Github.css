@@ -7,7 +7,7 @@
 }
 
 .github-stats__card {
-  padding: 1.2em;
+  padding: var(--panel-pad);
   border-radius: 20px;
   max-width: 100%;
 }
@@ -20,14 +20,16 @@
 
 .github-calendar {
   margin-top: 2em;
-  padding: 1.5em;
+  padding: var(--panel-pad);
   border-radius: 20px;
   overflow-x: auto;
 }
 
-@media (max-width: 600px) {
-  .github-stats__card,
-  .github-calendar {
-    padding: 1em;
-  }
+.fade-image {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.fade-image--loaded {
+  opacity: 1;
 }
