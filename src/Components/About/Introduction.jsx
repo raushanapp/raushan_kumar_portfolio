@@ -3,6 +3,7 @@ import "./Introduction.css";
 import { motion } from "framer-motion";
 import ExitToAppIcon from "@material-ui/icons/ExitToApp";
 import { fadeInX } from "../../utils/motion";
+import profileImage from "../../Assets/images/profile_image.PNG";
 
 const highlights = [
   "Solving Problems",
@@ -19,7 +20,7 @@ export const Introduction = () => {
       <article className="introduction">
         <motion.div className="introduction_logocontainer" {...fadeInX(true)}>
           <section className="glass-panel introduction_frame">
-            <img src="https://i.ibb.co/sJsvH1G/IMG-9738.jpg" alt="Images" />
+            <img src={profileImage} alt="Raushan Kumar" />
           </section>
         </motion.div>
         <motion.div
